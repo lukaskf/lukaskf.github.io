@@ -1,31 +1,61 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.classless.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="dog.png">
     <title>Lukas Kelsey-Friedemann</title>
-  </head>
-  <body>
-    <main class="container">
-      <h1>Lukas Kelsey-Friedemann</h1>
-      <div id="table-of-contents">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-        </ul>
-      </div>
-      <article id="about">
-        <h2>
-            About
-        </h2>
-        </article>
-    <article id="resume">
-        <h2>
-            Resume
-        </h2>
-        </article>
-    </main>
-  </body>
+    </head>
+    <body>
+        <main class="container">
+            <h1>Lukas Kelsey-Friedemann</h1>
+            <nav>
+                <ul>
+                </ul>
+                <ul>
+                    <li id="set-light-theme">
+                        &#127774;
+                    </li>
+                    <li>
+                        |
+                    </li>
+                    <li id="set-dark-theme">
+                        &#127773;
+                    </li>
+                </ul>
+            </nav>
+            <nav id="table-of-contents">
+                <ul>
+                </ul>
+                <ul>
+                    <li><a href="#">Top</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                </ul>
+            </nav>
+            <article id="about">
+                <h2>
+                    About
+                </h2>
+            </article>
+            <article id="resume">
+                <h2>
+                    Resume
+                </h2>
+            </article>
+        </main>
+    </body>
 </html>
+
+<script>
+    document.getElementById("set-light-theme").addEventListener('click', event=>{
+        document.querySelector("html").setAttribute("data-theme", "light");
+    });
+
+    document.getElementById("set-dark-theme").addEventListener('click', event=>{
+        document.querySelector("html").setAttribute("data-theme", "dark");
+    });
+
+</script>

@@ -1,3 +1,11 @@
 h1 {
-    color: coral;
+}
+
+#set-light-theme, #set-dark-theme {
+    cursor:pointer;
+}
+
+#table-of-contents {
+    position: sticky;
+    top: 10px;
 }
